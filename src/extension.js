@@ -12,13 +12,13 @@ function init() {
 
 function enable() {
     function set() {
-        DateMenu._eventList._weekStart = Prefs.getStartDay();
+        // DateMenu._eventList._weekStart = Prefs.getStartDay();
         DateMenu._calendar._weekStart = Prefs.getStartDay();
         DateMenu._calendar._onSettingsChange();
     }
 
     function unset() {
-        DateMenu._eventList._weekStart = Shell.util_get_week_start();
+        // DateMenu._eventList._weekStart = Shell.util_get_week_start();
         DateMenu._calendar._weekStart = Shell.util_get_week_start();
         DateMenu._calendar._onSettingsChange();
     }
