@@ -1,38 +1,55 @@
-const DateMenu = imports.ui.main.panel.statusArea.dateMenu;
-const Shell    = imports.gi.Shell;
-const Me       = imports.misc.extensionUtils.getCurrentExtension();
+// weeks-start-on-monday - Gnome shell extension for changing the week start day
+// Copyright (C) 2019 Philippe Troin (F-i-f on Github)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Prefs = Me.imports.prefs;
+const Lang        = imports.lang;
+const Shell	  = imports.gi.Shell;
+const DateMenu	  = imports.ui.main.panel.statusArea.dateMenu;
+const Me	  = imports.misc.extensionUtils.getCurrentExtension();
+const Convenience = Me.imports.convenience;
 
-let undos = [];
+const WeeksStartOnMondayExtension = new Lang.Class({
+    Name: 'WeeksStartOnMondayExtension',
+
+    _init: function() {
+	this._settings = null;
+	this._startDayChangedConnection = null;
+    },
+
+    _on_start_day_changed: function() {
+	DateMenu._calendar._weekStart = this._settings.get_int('start-day');
+	DateMenu._calendar._onSettingsChange();
+    },
+
+    enable: function() {
+	this._settings = Convenience.getSettings();
+	this._startDayChangedConnection = this._settings.connect('changed::start-day',
+								 this._on_start_day_changed.bind(this));
+	this._on_start_day_changed();
+    },
+
+    disable: function() {
+	this._settings.disconnect(this._startDayChangedConnection);
+	this._startDayChangedConnection = null;
+	this._settings = null;
+
+	DateMenu._calendar._weekStart = Shell.util_get_week_start();
+	DateMenu._calendar._onSettingsChange();
+    }
+});
 
 function init() {
-    Prefs.init();
-}
-
-function enable() {
-    function set() {
-        // DateMenu._eventList._weekStart = Prefs.getStartDay();
-        DateMenu._calendar._weekStart = Prefs.getStartDay();
-        DateMenu._calendar._onSettingsChange();
-    }
-
-    function unset() {
-        // DateMenu._eventList._weekStart = Shell.util_get_week_start();
-        DateMenu._calendar._weekStart = Shell.util_get_week_start();
-        DateMenu._calendar._onSettingsChange();
-    }
-
-    set();
-
-    undos.push(
-        unset,
-        Prefs.onStartDayChange(set)
-    );
-}
-
-function disable() {
-    while(undos.length > 0) {
-        undos.pop()();
-    }
+    return new WeeksStartOnMondayExtension();
 }
