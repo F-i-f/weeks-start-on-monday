@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="gnome-shell-extensions-weeks-start-on-monday">
+<schemalist gettext-domain="weeks-start-on-monday">
   <schema path="/org/gnome/shell/extensions/weeks-start-on-monday/"
-          id="org.gnome.shell.extensions.weeks-start-on-monday">
+	  id="org.gnome.shell.extensions.weeks-start-on-monday">
     <key name="start-day" type="i">
-        <default>1</default>
+      <range min="0" max="6"/>
+      <default>1</default>
       <summary>The start day of the week.</summary>
       <description>The start day of the week.</description>
     </key>
