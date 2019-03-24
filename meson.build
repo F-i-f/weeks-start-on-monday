@@ -88,7 +88,7 @@ if gse_run_command_obj.returncode() != 0
 endif
 home     = gse_run_command_obj.stdout().strip()
 
-gse_uuid		 = meson.project_name() + '@extensions.shell.gnome.fifi.org'
+gse_uuid		 = meson.project_name() + '@extensions.gnome-shell.fifi.org'
 gse_target_dir		 = home + '/.local/share/gnome-shell/extensions/' + gse_uuid
 gse_target_dir_schemas   = join_paths(gse_target_dir, 'schemas')
 gse_target_locale_dir    = join_paths(gse_target_dir, 'locale')

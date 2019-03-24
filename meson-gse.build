@@ -15,7 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 gse_project({weeks-start-on-monday},
-	    {extensions.shell.gnome.fifi.org},
+	    {extensions.gnome-shell.fifi.org},
 	    {1},
 {
 gse_sources	    += []
