@@ -75,7 +75,7 @@ gse_js60 = find_program('js60', required: false)
 # Include extension-specific settings
 
 gse_sources	    += []
-gse_libs	    += []
+gse_libs	    += [gse_lib_convenience]
 gse_data	    += []
 gse_schemas	    += []
 gse_dbus_interfaces += []
