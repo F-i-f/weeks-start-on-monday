@@ -1,0 +1,3 @@
+src/extension.js
+src/prefs.js
+schemas/org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml
