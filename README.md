@@ -21,13 +21,13 @@ page](https://extensions.gnome.org/local/).
 ## Download / Install
 
 ~~Install directly from the [Gnome Shell Extensions
-site](https://extensions.gnome.org/extension/TBD/weeks-start-on-monday/).~~
+site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).~~
 *This link won't be available until the extension is approved.*
 
 Or download the zip file from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
 unzip [the
-file](https://github.com/F-i-f/weeks-start-on-monday/download/v1/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v1.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v1/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v1.shell-extension.zip)
 in the
 `~/.local/share/gnome-shell/extensions/weeks-start-on-monday@extensions.gnome-shell.fifi.org`
 directory (you may have to create the directory).
