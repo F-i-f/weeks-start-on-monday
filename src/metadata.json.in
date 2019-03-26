@@ -2,7 +2,8 @@
     "description": "... or maybe not, and that's why the start day is configurable in the preferences.\n\nThis is an updated version of the \"Weeks Start on Monday\" extension for newer Gnome Shells.",
     "name": "Weeks Start on Monday Again...",
     "shell-version": [
-	"3.30"
+	"3.30",
+	"3.32"
     ],
     "gettext-domain": "@gettext_domain@",
     "settings-schema": "org.gnome.shell.extensions.weeks-start-on-monday",
