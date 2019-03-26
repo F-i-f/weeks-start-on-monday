@@ -20,9 +20,8 @@ page](https://extensions.gnome.org/local/).
 
 ## Download / Install
 
-~~Install directly from the [Gnome Shell Extensions
-site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).~~
-*This link won't be available until the extension is approved.*
+Install directly from the [Gnome Shell Extensions
+site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 
 Or download the zip file from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
