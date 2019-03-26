@@ -26,12 +26,9 @@ const Convenience = Me.imports.convenience;
 const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
 const _ = Gettext.gettext;
 
-const WeeksStartOnMondaySettings = new Lang.Class({
-    Name: 'WeeksStartOnMondaySettings',
-    Extends: Gtk.Grid,
-
+const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMondaySettings extends Gtk.Grid {
     _init(params) {
-	this.parent(params);
+	super._init(params);
 
 	this.margin_top = 12;
 	this.margin_bottom = this.margin_top;
@@ -124,7 +121,6 @@ const WeeksStartOnMondaySettings = new Lang.Class({
 
 	ypos += 1;
     }
-
 });
 
 function init() {

@@ -14,33 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Lang        = imports.lang;
 const Shell	  = imports.gi.Shell;
 const DateMenu	  = imports.ui.main.panel.statusArea.dateMenu;
 const Me	  = imports.misc.extensionUtils.getCurrentExtension();
 const Convenience = Me.imports.convenience;
 
-const WeeksStartOnMondayExtension = new Lang.Class({
-    Name: 'WeeksStartOnMondayExtension',
-
-    _init: function() {
+const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
+    constructor() {
 	this._settings = null;
 	this._startDayChangedConnection = null;
-    },
+    }
 
-    _on_start_day_changed: function() {
+    _on_start_day_changed() {
 	DateMenu._calendar._weekStart = this._settings.get_int('start-day');
 	DateMenu._calendar._onSettingsChange();
-    },
+    }
 
-    enable: function() {
+    enable() {
 	this._settings = Convenience.getSettings();
 	this._startDayChangedConnection = this._settings.connect('changed::start-day',
 								 this._on_start_day_changed.bind(this));
 	this._on_start_day_changed();
-    },
+    }
 
-    disable: function() {
+    disable() {
 	this._settings.disconnect(this._startDayChangedConnection);
 	this._startDayChangedConnection = null;
 	this._settings = null;
@@ -48,7 +45,7 @@ const WeeksStartOnMondayExtension = new Lang.Class({
 	DateMenu._calendar._weekStart = Shell.util_get_week_start();
 	DateMenu._calendar._onSettingsChange();
     }
-});
+};
 
 function init() {
     return new WeeksStartOnMondayExtension();
