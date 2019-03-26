@@ -27,9 +27,8 @@ const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
 const _ = Gettext.gettext;
 
 const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMondaySettings extends Gtk.Grid {
-    _init(params) {
-	super._init(params);
 
+    setup() {
 	this.margin_top = 12;
 	this.margin_bottom = this.margin_top;
 	this.margin_left = 48;
@@ -129,6 +128,7 @@ function init() {
 
 function buildPrefsWidget() {
     let widget = new WeeksStartOnMondaySettings();
+    widget.setup();
     widget.show_all();
 
     return widget;
