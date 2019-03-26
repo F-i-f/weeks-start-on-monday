@@ -51,6 +51,13 @@ directory (you may have to create the directory).
 
 ## Changelog
 
+### Version 2
+#### March 26, 2019
+
+- ES60 / Gnome-Shell 3.32 compatibility (still compatible with 3.30 and lower).
+- Updated meson-gse to latest.
+- Minor doc updates.
+
 ### Version 1
 #### March 25, 2019
 
