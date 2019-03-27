@@ -1,14 +1,14 @@
 {
-    "description": "... or maybe not, and that's why the start day is configurable in the preferences.\n\nThis is an updated version of the \"Weeks Start on Monday\" extension for newer Gnome Shells.",
-    "name": "Weeks Start on Monday Again...",
-    "shell-version": [
-	"3.30",
-	"3.32"
-    ],
-    "gettext-domain": "@gettext_domain@",
-    "settings-schema": "org.gnome.shell.extensions.weeks-start-on-monday",
-    "url": "https://github.com/F-i-f/weeks-start-on-monday",
-    "uuid": "@uuid@",
-    "version": @version@,
-    "vcs_revision": "@VCS_TAG@"
+  "description": "... or maybe not, and that's why the start day is configurable in the preferences.\n\nThis is an updated version of the \"Weeks Start on Monday\" extension for newer Gnome Shells.",
+  "gettext-domain": "@gettext_domain@",
+  "name": "Weeks Start on Monday Again...",
+  "settings-schema": "org.gnome.shell.extensions.weeks-start-on-monday",
+  "shell-version": [
+    "3.30",
+    "3.32"
+  ],
+  "url": "https://github.com/F-i-f/weeks-start-on-monday",
+  "uuid": "@uuid@",
+  "vcs_revision": "@VCS_TAG@",
+  "version": @version@
 }
