@@ -54,7 +54,7 @@ directory (you may have to create the directory).
 ### Version 2
 #### March 26, 2019
 
-- ES60 / Gnome-Shell 3.32 compatibility (still compatible with 3.30 and lower).
+- ES6 / Gnome-Shell 3.32 compatibility (still compatible with 3.30 and lower).
 - Updated meson-gse to latest.
 - Minor doc updates.
 
@@ -71,5 +71,5 @@ First public release.
 - [luciangabor](https://extensions.gnome.org/accounts/profile/luciangabor)
   for the original extension.
 
-<!--  LocalWords:  extensions' Changelog luciangabor
+<!--  LocalWords:  extensions' Changelog luciangabor ES6 gse
  -->
