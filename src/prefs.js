@@ -76,7 +76,6 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 
 	ypos += 1;
 
-
 	descr = _(this._settings.settings_schema.get_key('start-day').get_description());
 	this.starton_label = new Gtk.Label({label: _("Weeks start on:"), halign: Gtk.Align.START});
 	this.starton_label.set_tooltip_text(descr);
