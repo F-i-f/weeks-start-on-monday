@@ -1,4 +1,5 @@
-# Weeks Start on Monday Again... Gnome Shell Extension
+Weeks Start on Monday Again... Gnome Shell Extension
+====================================================
 
 ![Calendar Screenshot](docs/screenshot.png)
 
@@ -17,6 +18,21 @@ accessed from the "Tweaks" application or the [Gnome Shell Extensions
 page](https://extensions.gnome.org/local/).
 
 ![Weeks Start on Monday Again... preference panel](docs/preferences.png)
+
+## License
+
+Weeks Start on Monday Again... is free software: you can redistribute
+it and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see [http://www.gnu.org/licenses/].
 
 ## Download / Install
 
