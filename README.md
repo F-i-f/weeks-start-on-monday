@@ -1,7 +1,10 @@
 Weeks Start on Monday Again... Gnome Shell Extension
 ====================================================
 
+[![Build Status](https://travis-ci.org/F-i-f/weeks-start-on-monday.svg?branch=master)](https://travis-ci.org/F-i-f/weeks-start-on-monday)
+
 ![Calendar Screenshot](docs/screenshot.png)
+
 
 ## Overview
 
