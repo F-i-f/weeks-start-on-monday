@@ -45,7 +45,7 @@ site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 Or download the zip file from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
 unzip [the
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v3/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v3.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v4/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v4.shell-extension.zip)
 in the
 `~/.local/share/gnome-shell/extensions/weeks-start-on-monday@extensions.gnome-shell.fifi.org`
 directory (you may have to create the directory).
@@ -69,6 +69,11 @@ directory (you may have to create the directory).
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 4
+#### September 29, 2019
+
+- Declared gnome-shell 3.34 compatibility (no code changes required).
 
 ### Version 3
 #### September 6, 2019
