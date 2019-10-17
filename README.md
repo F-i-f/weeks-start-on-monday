@@ -104,7 +104,9 @@ First public release.
 - [luciangabor](https://extensions.gnome.org/accounts/profile/luciangabor)
   for the original extension.
 
+- German translation by [Etamuk](https://github.com/Etamuk).
+
 <!--  LocalWords:  extensions' Changelog luciangabor ES6 gse js const
  -->
-<!--  LocalWords:  merchantability
+<!--  LocalWords:  merchantability Etamuk
  -->
