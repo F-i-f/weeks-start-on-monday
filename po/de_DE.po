@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the weeks-start-on-monday package.
+# Onno Giesmann <nutzer3105@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: weeks-start-on-monday\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-24 11:59-0700\n"
+"PO-Revision-Date: 2019-10-16 20:13+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: Onno Giesmann <nutzer3105@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
+
+#: src/prefs.js:52
+msgid "Weeks Start on Monday Again..."
+msgstr "Die Wochen beginnen wieder am Montag…"
+
+#: src/prefs.js:62
+msgid "Version"
+msgstr "Version"
+
+#: src/prefs.js:85
+msgid "Weeks start on:"
+msgstr "Wochenanfang ist:"
+
+#: src/prefs.js:100
+msgid "Sunday"
+msgstr "Sonntag"
+
+#: src/prefs.js:100
+msgid "Monday"
+msgstr "Montag"
+
+#: src/prefs.js:100
+msgid "Tuesday"
+msgstr "Dienstag"
+
+#: src/prefs.js:100
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+#: src/prefs.js:101
+msgid "Thursday"
+msgstr "Donnerstag"
+
+#: src/prefs.js:101
+msgid "Friday"
+msgstr "Freitag"
+
+#: src/prefs.js:101
+msgid "Saturday"
+msgstr "Samstag"
+
+#: src/prefs.js:117
+msgid ""
+"Copyright © 2019 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-i-f</"
+"a> on GitHub)"
+msgstr ""
+"Copyright © 2019 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-i-f</"
+"a> auf GitHub)"
+
+#: schemas/org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml:8
+#: schemas/org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml:9
+msgid "The start day of the week."
+msgstr "Der Tag, an dem die Woche beginnt."
