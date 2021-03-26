@@ -45,7 +45,7 @@ site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 Or download the zip file from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
 unzip [the
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v7/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v7.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v8/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v8.shell-extension.zip)
 in the
 `~/.local/share/gnome-shell/extensions/weeks-start-on-monday@extensions.gnome-shell.fifi.org`
 directory (you may have to create the directory).
@@ -69,6 +69,18 @@ directory (you may have to create the directory).
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 8
+#### March 25, 2021
+
+- Gnome-shell 40.0 compatibility.
+- Update preferences for Gnome-shell 40.0.
+- Update meson-gse to latest:
+  - Now prints the GJS version in the system log at start-up (if debug
+	is enabled).
+  - Support more mozjs version (78, 68, 52) for build-time syntax
+	checks (`ninja test`).
+
 
 ### Version 7
 #### October 6, 2020
