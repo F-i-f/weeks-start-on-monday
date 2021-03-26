@@ -81,7 +81,6 @@ directory (you may have to create the directory).
   - Support more mozjs version (78, 68, 52) for build-time syntax
 	checks (`ninja test`).
 
-
 ### Version 7
 #### October 6, 2020
 
