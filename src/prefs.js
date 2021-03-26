@@ -101,7 +101,7 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	}));
 	let css = new Gtk.CssProvider();
 	css.load_from_data('label { min-width: 12ex; } trough { margin-right: 10ex; }');
-	this.starton_control.get_style_context().add_provider(css, 0);
+	this.starton_control.get_style_context().add_provider(css, Gtk.StyleProvider.PRIORITY_APPLICATION);
 	this.attach(this.starton_label,   1, ypos, 1, 1);
 	this.attach(this.starton_control, 2, ypos, 1, 1);
 	this._settings.bind('start-day', this.starton_adjustment, 'value', Gio.SettingsBindFlags.DEFAULT);
