@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the weeks-start-on-monday package.
 # Philippe Troin, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: weeks-start-on-monday\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-11 18:41-0700\n"
-"PO-Revision-Date: 2020-03-11 16:35-0700\n"
+"POT-Creation-Date: 2021-03-25 13:31-0700\n"
+"PO-Revision-Date: 2021-03-25 13:32-0700\n"
 "Last-Translator: Philippe Troin <F-i-f @ github>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -59,11 +58,9 @@ msgstr "Samedi"
 
 #: src/prefs.js:112
 msgid ""
-"Copyright © 2019, 2020 Philippe Troin (<a href=\"https://github.com/F-i-f"
-"\">F-i-f</a> on GitHub)"
-msgstr ""
-"Copyright © 2019, 2020 Philippe Troin (<a href=\"https://github.com/F-i-f"
-"\">F-i-f</a> sur GitHub)"
+"Copyright © 2019-2021 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-"
+"i-f</a> on GitHub)"
+msgstr "Copyright © 2019-2021 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-i-f</a> sur GitHub)"
 
 #: schemas/org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml:8
 #: schemas/org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml:9
