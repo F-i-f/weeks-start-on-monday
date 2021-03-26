@@ -86,7 +86,10 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	this.starton_control = new Gtk.Scale({halign: Gtk.Align.END,
 					      orientation: Gtk.Orientation.HORIZONTAL,
 					      draw_value: false,
-					      margin: 5,
+					      margin_start: 5,
+					      margin_end: 5,
+					      margin_top: 5,
+					      margin_bottom: 5,
 					      digits: 0,
 					      adjustment: this.starton_adjustment
 					     });
