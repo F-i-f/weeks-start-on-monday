@@ -45,7 +45,7 @@ site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 Or download the zip file from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
 unzip [the
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v8/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v8.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v9/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v9.shell-extension.zip)
 in the
 `~/.local/share/gnome-shell/extensions/weeks-start-on-monday@extensions.gnome-shell.fifi.org`
 directory (you may have to create the directory).
@@ -69,6 +69,13 @@ directory (you may have to create the directory).
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 9
+#### December 18, 2021
+
+- Gnome-shell 41.0 compatibility.
+- Update meson-gse to latest:
+  - Bugfix for preferences logging.
 
 ### Version 8
 #### March 25, 2021

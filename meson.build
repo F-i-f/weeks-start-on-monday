@@ -36,7 +36,7 @@
 
 # Boilerplate
 project('weeks-start-on-monday',
-	version: '8',
+	version: '9',
 	meson_version: '>= 0.44.0',
 	license: 'GPL3' )
 
