@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Lang = imports.lang;
 const Gio = imports.gi.Gio;
 const GObject = imports.gi.GObject;
 const Gtk = imports.gi.Gtk;
@@ -96,9 +95,9 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	this.starton_control.set_round_digits(0);
 	[ _('Sunday'), _('Monday'), _('Tuesday'), _('Wednesday'),
 	  _('Thursday'), _('Friday'), _('Saturday')
-	].forEach(Lang.bind(this, function(day, idx) {
+	].forEach((function(day, idx) {
 	    this.starton_control.add_mark(idx, Gtk.PositionType.BOTTOM, day);
-	}));
+	}).bind(this));
 	let css = new Gtk.CssProvider();
 	css.load_from_data('label { min-width: 12ex; } trough { margin-right: 10ex; }');
 	this.starton_control.get_style_context().add_provider(css, Gtk.StyleProvider.PRIORITY_APPLICATION);
