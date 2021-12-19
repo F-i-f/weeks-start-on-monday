@@ -20,7 +20,6 @@ const Gtk = imports.gi.Gtk;
 
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
-const Convenience = Me.imports.convenience;
 
 const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
 const _ = Gettext.gettext;
@@ -36,7 +35,7 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	this.column_spacing = this.row_spacing;
 	this.orientation = Gtk.Orientation.VERTICAL;
 
-	this._settings = Convenience.getSettings();
+	this._settings = ExtensionUtils.getSettings();
 
 	let ypos = 1;
 	let descr;
@@ -123,7 +122,7 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 });
 
 function init() {
-    Convenience.initTranslations();
+    ExtensionUtils.initTranslations();
 }
 
 function buildPrefsWidget() {

@@ -1,5 +1,5 @@
 // weeks-start-on-monday - Gnome shell extension for changing the week start day
-// Copyright (C) 2019 Philippe Troin (F-i-f on Github)
+// Copyright (C) 2019, 2021 Philippe Troin (F-i-f on Github)
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,10 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Shell	  = imports.gi.Shell;
-const DateMenu	  = imports.ui.main.panel.statusArea.dateMenu;
-const Me	  = imports.misc.extensionUtils.getCurrentExtension();
-const Convenience = Me.imports.convenience;
+const Shell	      = imports.gi.Shell;
+const DateMenu	      = imports.ui.main.panel.statusArea.dateMenu;
+const ExtensionsUtils = imports.misc.extensionUtils;
+const Me              = Extensionutils.getCurrentExtension();
 
 const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
     constructor() {
@@ -31,7 +31,7 @@ const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
     }
 
     enable() {
-	this._settings = Convenience.getSettings();
+	this._settings = ExtensionUtils.getSettings();
 	this._startDayChangedConnection = this._settings.connect('changed::start-day',
 								 this._on_start_day_changed.bind(this));
 	this._on_start_day_changed();
