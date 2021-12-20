@@ -54,7 +54,7 @@ directory (you may have to create the directory).
 
 ### Requirements
 
-- [meson](http://mesonbuild.com/) v0.44.0 or later.
+- [meson](http://mesonbuild.com/) v0.50.0 or later.
 
 ### Running the build
 
