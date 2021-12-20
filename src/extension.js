@@ -14,10 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Shell	      = imports.gi.Shell;
-const DateMenu	      = imports.ui.main.panel.statusArea.dateMenu;
-const ExtensionsUtils = imports.misc.extensionUtils;
-const Me              = Extensionutils.getCurrentExtension();
+const Shell	     = imports.gi.Shell;
+const DateMenu	     = imports.ui.main.panel.statusArea.dateMenu;
+const ExtensionUtils = imports.misc.extensionUtils;
+const Me             = ExtensionUtils.getCurrentExtension();
 
 const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
     constructor() {
