@@ -45,7 +45,7 @@ site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 Or download the zip file from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
 unzip [the
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v10/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v10.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v11/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v11.shell-extension.zip)
 in the
 `~/.local/share/gnome-shell/extensions/weeks-start-on-monday@extensions.gnome-shell.fifi.org`
 directory (you may have to create the directory).
@@ -70,6 +70,22 @@ directory (you may have to create the directory).
 
 ## Changelog
 
+### Version 11
+#### December 22, 2021
+
+- Declare compatibility with version 40 and 41 of Gnome Shell instead
+  of using minor versions (40.0 and 41.1).  This should clear reports
+  of the extension being incompatible with well-supported versions.
+- Drop compatibility with Gnome Shell 3.28 and 3.30 (which do not have
+  getSettings/initTranslations in ExtensionUtils).
+- Update meson-gse:
+  - Fix build issues with meson 0.60.0.
+  - Bump minimum meson version to 0.50.0.
+- Clean up code:
+  - Remove Lang imports.
+  - Use ExtensionUtils for getSettings/initTranslations instead of
+	using meson-gse's convenience.js.
+
 ### Version 10
 #### December 18, 2021
 
@@ -80,7 +96,7 @@ directory (you may have to create the directory).
 
 - Gnome-shell 41.0 compatibility.
 - Update meson-gse to latest:
-  - Bugfix for preferences logging.
+  - Bug fix for preferences logging.
 
 ### Version 8
 #### March 25, 2021
@@ -147,5 +163,7 @@ First public release.
 
 <!--  LocalWords:  extensions' Changelog luciangabor ES6 gse js const
  -->
-<!--  LocalWords:  merchantability Etamuk
+<!--  LocalWords:  merchantability Etamuk getSettings ExtensionUtils
+ -->
+<!--  LocalWords:  initTranslations gse's GJS mozjs
  -->
