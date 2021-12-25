@@ -17,7 +17,6 @@
 const Shell	     = imports.gi.Shell;
 const DateMenu	     = imports.ui.main.panel.statusArea.dateMenu;
 const ExtensionUtils = imports.misc.extensionUtils;
-const Me             = ExtensionUtils.getCurrentExtension();
 
 const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
     constructor() {
