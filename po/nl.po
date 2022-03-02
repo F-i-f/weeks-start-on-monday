@@ -7,26 +7,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weeks-start-on-monday\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-25 13:31-0700\n"
+"POT-Creation-Date: 2022-03-02 09:06-0800\n"
 "PO-Revision-Date: 2021-07-12 14:22+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nl\n"
 
-#: src/prefs.js:48
+#: src/prefs.js:46
 msgid "Weeks Start on Monday Again..."
 msgstr "De week begint weer op maandag…"
 
-#: src/prefs.js:58
+#: src/prefs.js:56
 msgid "Version"
 msgstr "Versie"
 
-#: src/prefs.js:80
+#: src/prefs.js:78
 msgid "Weeks start on:"
 msgstr "De week begint op:"
 
@@ -59,8 +59,9 @@ msgid "Saturday"
 msgstr "zaterdag"
 
 #: src/prefs.js:112
+#, fuzzy
 msgid ""
-"Copyright © 2019-2021 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-"
+"Copyright © 2019-2022 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-"
 "i-f</a> on GitHub)"
 msgstr ""
 "Copyright © 2019-2021 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-"
