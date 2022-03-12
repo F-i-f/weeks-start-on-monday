@@ -42,13 +42,14 @@ along with this program.  If not, see [http://www.gnu.org/licenses/].
 Install directly from the [Gnome Shell Extensions
 site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 
-Or download the zip file from the GitHub [releases
-page](https://github.com/F-i-f/weeks-start-on-monday/releases) and
-unzip [the
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v11/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v11.shell-extension.zip)
-in the
-`~/.local/share/gnome-shell/extensions/weeks-start-on-monday@extensions.gnome-shell.fifi.org`
-directory (you may have to create the directory).
+Or download the [zip
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v12/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v12.shell-extension.zip)
+from the GitHub [releases
+page](https://github.com/F-i-f/weeks-start-on-monday/releases) and run:
+
+``` shell
+gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v12.shell-extension.zip
+```
 
 ## Building from source
 
@@ -69,6 +70,14 @@ directory (you may have to create the directory).
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 12
+#### March 12, 2022
+
+- Gnome Shell 42 compatibility.
+- Update instructions to use `gnome-extensions` instead of manually
+  unzipping.
+- Js cleanup.
 
 ### Version 11
 #### December 22, 2021
