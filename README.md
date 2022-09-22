@@ -43,12 +43,12 @@ Install directly from the [Gnome Shell Extensions
 site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 
 Or download the [zip
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v12/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v12.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v13/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v13.shell-extension.zip)
 from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and run:
 
 ``` shell
-gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v12.shell-extension.zip
+gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v13.shell-extension.zip
 ```
 
 ## Building from source
@@ -70,6 +70,14 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 13
+#### September 22, 2022
+
+- Gnome Shell 43 compatibility.
+- Update meson-gse:
+  - js91 support
+  - Support meson 0.61 and later when building.
 
 ### Version 12
 #### March 12, 2022
@@ -174,5 +182,5 @@ First public release.
  -->
 <!--  LocalWords:  merchantability Etamuk getSettings ExtensionUtils
  -->
-<!--  LocalWords:  initTranslations gse's GJS mozjs
+<!--  LocalWords:  initTranslations gse's GJS mozjs re-implementation
  -->
