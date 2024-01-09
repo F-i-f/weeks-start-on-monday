@@ -1,5 +1,5 @@
 // weeks-start-on-monday - Gnome shell extension for changing the week start day
-// Copyright (C) 2019, 2021 Philippe Troin (F-i-f on Github)
+// Copyright (C) 2019-2024 Philippe Troin (F-i-f on Github)
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,23 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Shell	     = imports.gi.Shell;
-const DateMenu	     = imports.ui.main.panel.statusArea.dateMenu;
-const ExtensionUtils = imports.misc.extensionUtils;
+import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
+import Shell                     from 'gi://Shell';
+import * as Main                 from 'resource:///org/gnome/shell/ui/main.js';
 
-const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
-    constructor() {
+export default class WeeksStartOnMondayExtension extends Extension {
+    constructor(metadata) {
+	super(metadata);
 	this._settings = null;
 	this._startDayChangedConnection = null;
     }
 
     _on_start_day_changed() {
-	DateMenu._calendar._weekStart = this._settings.get_int('start-day');
-	DateMenu._calendar._onSettingsChange();
+	Main.panel.statusArea.dateMenu._calendar._weekStart = this._settings.get_int('start-day');
+	Main.panel.statusArea.dateMenu._calendar._onSettingsChange();
     }
 
     enable() {
-	this._settings = ExtensionUtils.getSettings();
+	this._settings = this.getSettings();
 	this._startDayChangedConnection = this._settings.connect('changed::start-day',
 								 this._on_start_day_changed.bind(this));
 	this._on_start_day_changed();
@@ -41,11 +42,7 @@ const WeeksStartOnMondayExtension = class WeeksStartOnMondayExtension {
 	this._startDayChangedConnection = null;
 	this._settings = null;
 
-	DateMenu._calendar._weekStart = Shell.util_get_week_start();
-	DateMenu._calendar._onSettingsChange();
+	Main.panel.statusArea.dateMenu._calendar._weekStart = Shell.util_get_week_start();
+	Main.panel.statusArea.dateMenu._calendar._onSettingsChange();
     }
-};
-
-function init() {
-    return new WeeksStartOnMondayExtension();
 }

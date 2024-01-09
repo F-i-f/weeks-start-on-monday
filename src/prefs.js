@@ -14,28 +14,24 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-const Gio = imports.gi.Gio;
-const GObject = imports.gi.GObject;
-const Gtk = imports.gi.Gtk;
+import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
+import Adw                                  from 'gi://Adw';
+import Gio                                  from 'gi://Gio';
+import Gtk                                  from 'gi://Gtk';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
+export default class WeeksStartOnMondaySettings extends ExtensionPreferences {
 
-const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
-const _ = Gettext.gettext;
+    fillPreferencesWindow(window) {
+	this._grid = new Gtk.Grid();
+	this._grid.margin_top = 12;
+	this._grid.margin_bottom = this._grid.margin_top;
+	this._grid.margin_start = 48;
+	this._grid.margin_end = this._grid.margin_start;
+	this._grid.row_spacing = 6;
+	this._grid.column_spacing = this._grid.row_spacing;
+	this._grid.orientation = Gtk.Orientation.VERTICAL;
 
-const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMondaySettings extends Gtk.Grid {
-
-    setup() {
-	this.margin_top = 12;
-	this.margin_bottom = this.margin_top;
-	this.margin_start = 48;
-	this.margin_end = this.margin_start;
-	this.row_spacing = 6;
-	this.column_spacing = this.row_spacing;
-	this.orientation = Gtk.Orientation.VERTICAL;
-
-	this._settings = ExtensionUtils.getSettings();
+	this._settings = this.getSettings();
 
 	let ypos = 1;
 	let descr;
@@ -47,30 +43,30 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	    hexpand: true,
 	    halign: Gtk.Align.CENTER
 	});
-	this.attach(this.title_label, 1, ypos, 2, 1);
+	this._grid.attach(this.title_label, 1, ypos, 2, 1);
 
 	ypos += 1;
 
 	this.version_label = new Gtk.Label({
 	    use_markup: true,
 	    label: '<span size="small">'+_('Version')
-		+ ' ' + Me.metadata['version']+' / git '+Me.metadata['vcs_revision'] + '</span>',
+		+ ' ' + this.metadata['version']+' / git '+this.metadata['vcs_revision'] + '</span>',
 	    hexpand: true,
 	    halign: Gtk.Align.CENTER,
 	});
-	this.attach(this.version_label, 1, ypos, 2, 1);
+	this._grid.attach(this.version_label, 1, ypos, 2, 1);
 
 	ypos += 1;
 
 	this.link_label = new Gtk.Label({
 	    use_markup: true,
-	    label: '<span size="small"><a href="'+Me.metadata.url+'">'
-		+ Me.metadata.url + '</a></span>',
+	    label: '<span size="small"><a href="'+this.metadata.url+'">'
+		+ this.metadata.url + '</a></span>',
 	    hexpand: true,
 	    halign: Gtk.Align.CENTER,
-	    margin_bottom: this.margin_bottom
+	    margin_bottom: this._grid.margin_bottom
 	});
-	this.attach(this.link_label, 1, ypos, 2, 1);
+	this._grid.attach(this.link_label, 1, ypos, 2, 1);
 
 	ypos += 1;
 
@@ -99,8 +95,8 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	}).bind(this));
 	let css = new Gtk.CssProvider();
 	this.starton_control.get_style_context().add_provider(css, Gtk.StyleProvider.PRIORITY_APPLICATION);
-	this.attach(this.starton_label,   1, ypos, 1, 1);
-	this.attach(this.starton_control, 2, ypos, 1, 1);
+	this._grid.attach(this.starton_label,   1, ypos, 1, 1);
+	this._grid.attach(this.starton_control, 2, ypos, 1, 1);
 	this._settings.bind('start-day', this.starton_adjustment, 'value', Gio.SettingsBindFlags.DEFAULT);
 
 	ypos += 1;
@@ -112,25 +108,17 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 		+ '</span>',
 	    hexpand: true,
 	    halign: Gtk.Align.CENTER,
-	    margin_top: this.margin_bottom
+	    margin_top: this._grid.margin_top
 	});
-	this.attach(this.copyright_label, 1, ypos, 2, 1);
+	this._grid.attach(this.copyright_label, 1, ypos, 2, 1);
 
 	ypos += 1;
+
+	const group = new Adw.PreferencesGroup();
+	group.add(this._grid);
+	const page = new Adw.PreferencesPage();
+	page.add(group);
+
+	window.add(page);
     }
-});
-
-function init() {
-    ExtensionUtils.initTranslations();
-}
-
-function buildPrefsWidget() {
-    let widget = new WeeksStartOnMondaySettings();
-    widget.setup();
-    // show_all() is only available/necessary on GTK < 4.0.
-    if (widget.show_all !== undefined) {
-	widget.show_all();
-    }
-
-    return widget;
 }
