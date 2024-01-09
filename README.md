@@ -73,6 +73,7 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 #### January 9, 2024
 
 - Gnome Shell 44 compatibility.
+- Switch preference layout to vertical for better visibility.
 - Update meson-gse:
   - js102 support
 
