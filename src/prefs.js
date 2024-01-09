@@ -1,5 +1,5 @@
 // weeks-start-on-monday - Gnome shell extension for changing the week start day
-// Copyright (C) 2019-2022 Philippe Troin (F-i-f on Github)
+// Copyright (C) 2019-2022, 2024 Philippe Troin (F-i-f on Github)
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -81,7 +81,7 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 						       upper          : 6,
 						       step_increment : 1
 					      })
-	this.starton_control = new Gtk.Scale({orientation: Gtk.Orientation.HORIZONTAL,
+	this.starton_control = new Gtk.Scale({orientation: Gtk.Orientation.VERTICAL,
 					      draw_value: false,
 					      margin_start: 5,
 					      margin_end: 5,
@@ -98,7 +98,6 @@ const WeeksStartOnMondaySettings = GObject.registerClass(class WeeksStartOnMonda
 	    this.starton_control.add_mark(idx, Gtk.PositionType.BOTTOM, day);
 	}).bind(this));
 	let css = new Gtk.CssProvider();
-	css.load_from_data('label { min-width: 12ex; } trough { margin-right: 10ex; }');
 	this.starton_control.get_style_context().add_provider(css, Gtk.StyleProvider.PRIORITY_APPLICATION);
 	this.attach(this.starton_label,   1, ypos, 1, 1);
 	this.attach(this.starton_control, 2, ypos, 1, 1);
