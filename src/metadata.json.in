@@ -4,7 +4,8 @@
   "name": "Weeks Start on Monday Again...",
   "settings-schema": "org.gnome.shell.extensions.weeks-start-on-monday",
   "shell-version": [
-    "45"
+    "45",
+    "46"
   ],
   "url": "https://github.com/F-i-f/weeks-start-on-monday",
   "uuid": "@uuid@",
