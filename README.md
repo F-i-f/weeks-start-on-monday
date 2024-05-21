@@ -57,7 +57,7 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 
 ### Running the build
 
-- Check out: `git clone https://github.com/F-i-f/weeks-start-on-monday/`
+- Check out: `git clone --recurse-submodules https://github.com/F-i-f/weeks-start-on-monday/`
 
 - `cd weeks-start-on-monday`
 
