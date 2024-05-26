@@ -61,7 +61,7 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 
 - `cd weeks-start-on-monday`
 
-- Run meson: `meson build`
+- Run meson: `meson setup build`
 
 - To install in your your gnome shell extensions' directory (~/.local/share/gnome-shell/extensions), run ninja: `ninja -C build install`
 
