@@ -53,7 +53,7 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 
 ### Requirements
 
-- [meson](http://mesonbuild.com/) v0.50.0 or later.
+- [meson](http://mesonbuild.com/) v1.4.0 or later.
 
 ### Running the build
 
