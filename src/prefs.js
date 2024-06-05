@@ -89,9 +89,9 @@ export default class WeeksStartOnMondaySettings extends ExtensionPreferences {
 	starton_control.set_round_digits(0);
 	[ _('Sunday'), _('Monday'), _('Tuesday'), _('Wednesday'),
 	  _('Thursday'), _('Friday'), _('Saturday')
-	].forEach((function(day, idx) {
+	].forEach((day, idx) => {
 	    starton_control.add_mark(idx, Gtk.PositionType.BOTTOM, day);
-	}).bind(this));
+	});
 	grid.attach(starton_label,   1, ypos, 1, 1);
 	grid.attach(starton_control, 2, ypos, 1, 1);
 	settings.bind('start-day', starton_adjustment, 'value', Gio.SettingsBindFlags.DEFAULT);
