@@ -41,12 +41,12 @@ Install directly from the [Gnome Shell Extensions
 site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 
 Or download the [zip
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v17/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v17.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v18/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v18.shell-extension.zip)
 from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and run:
 
 ``` shell
-gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v17.shell-extension.zip
+gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v18.shell-extension.zip
 ```
 
 ## Building from source
@@ -68,6 +68,16 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 18
+#### September 11, 2024
+
+- Gnome Shell 47 compatibility.
+- Update meson-gse:
+  - Now requires meson 1.4.0 or later.
+  - Build now runs eslint on test, added prettier target.
+- Update to pass eslint.
+- Code reformatted with prettier.
 
 ### Version 17
 #### April 5, 2024
@@ -206,4 +216,6 @@ First public release.
 <!--  LocalWords:  merchantability Etamuk getSettings ExtensionUtils
  -->
 <!--  LocalWords:  initTranslations gse's GJS mozjs re-implementation
+ -->
+<!--  LocalWords:  eslint js102 js91
  -->
