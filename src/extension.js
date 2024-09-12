@@ -1,3 +1,4 @@
+// -*- indent-tabs-mode: nil; -*-
 // weeks-start-on-monday - Gnome shell extension for changing the week start day
 // Copyright (C) 2019-2024 Philippe Troin (F-i-f on Github)
 //
