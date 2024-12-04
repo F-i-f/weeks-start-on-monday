@@ -1,8 +1,11 @@
-Weeks Start on Monday Again... Gnome Shell Extension
-====================================================
+<IMG SRC="docs/logo.png" WIDTH="28px" HEIGHT="28px" ALT="Logo"/>&nbsp;Weeks Start on Monday Again... Gnome Shell Extension
+===========================================================================================================================
+
+[<IMG
+SRC="https://raw.githubusercontent.com/F-i-f/meson-gse/refs/heads/master/resources/get-it-on-ego.svg"
+HEIGHT="100px" ALT="Get it on Gnome Extensions"/>](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/)
 
 ![Calendar Screenshot](docs/screenshot.png)
-
 
 ## Overview
 
