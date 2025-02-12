@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weeks-start-on-monday\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-05 16:31-0700\n"
+"POT-Creation-Date: 2025-02-12 02:05-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,49 +17,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/prefs.js:44
+#: src/prefs.js:45
 msgid "Weeks Start on Monday Again..."
 msgstr ""
 
-#: src/prefs.js:57
+#: src/prefs.js:58
 msgid "Version"
 msgstr ""
 
-#: src/prefs.js:89
+#: src/prefs.js:90
 msgid "Weeks start on:"
 msgstr ""
 
-#: src/prefs.js:109
+#: src/prefs.js:110
 msgid "Sunday"
 msgstr ""
 
-#: src/prefs.js:110
+#: src/prefs.js:111
 msgid "Monday"
 msgstr ""
 
-#: src/prefs.js:111
+#: src/prefs.js:112
 msgid "Tuesday"
 msgstr ""
 
-#: src/prefs.js:112
+#: src/prefs.js:113
 msgid "Wednesday"
 msgstr ""
 
-#: src/prefs.js:113
+#: src/prefs.js:114
 msgid "Thursday"
 msgstr ""
 
-#: src/prefs.js:114
+#: src/prefs.js:115
 msgid "Friday"
 msgstr ""
 
-#: src/prefs.js:115
+#: src/prefs.js:116
 msgid "Saturday"
 msgstr ""
 
-#: src/prefs.js:135
+#: src/prefs.js:136
 msgid ""
-"Copyright © 2019-2024 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-"
+"Copyright © 2019-2025 Philippe Troin (<a href=\"https://github.com/F-i-f\">F-"
 "i-f</a> on GitHub)"
 msgstr ""
 
