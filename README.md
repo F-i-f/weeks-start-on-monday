@@ -44,12 +44,12 @@ Install directly from the [Gnome Shell Extensions
 site](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/).
 
 Or download the [zip
-file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v21/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v21.shell-extension.zip)
+file](https://github.com/F-i-f/weeks-start-on-monday/releases/download/v22/weeks-start-on-monday@extensions.gnome-shell.fifi.org.v22.shell-extension.zip)
 from the GitHub [releases
 page](https://github.com/F-i-f/weeks-start-on-monday/releases) and run:
 
 ``` shell
-gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v21.shell-extension.zip
+gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v22.shell-extension.zip
 ```
 
 ## Building from source
@@ -71,6 +71,11 @@ gnome-extensions install weeks-start-on-monday@extensions.gnome-shell.fifi.org.v
 - To build the extension zip files, run: `ninja -C build extension.zip`, the extension will be found under `build/extension.zip`.
 
 ## Changelog
+
+### Version 22
+#### September 11, 2025
+
+- Russian translation, courtesy of FraxinusAcer on Github.
 
 ### Version 21
 #### August 30, 2025

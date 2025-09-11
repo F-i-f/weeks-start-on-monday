@@ -16,7 +16,7 @@
 
 gse_project({weeks-start-on-monday},
 	    {extensions.gnome-shell.fifi.org},
-	    {21},
+	    {22},
 {
 gse_sources	    += []
 gse_libs	    += []
