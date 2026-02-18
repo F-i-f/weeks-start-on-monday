@@ -1,5 +1,5 @@
 {
-  "description": "... or maybe not, and that's why the start day is configurable in the preferences.\n\nThis is an updated version of the \"Weeks Start on Monday\" extension for newer Gnome Shells.",
+  "description": "... or maybe not, and that's why the start day is configurable in the preferences.\n\nThis is an updated version of the \"Weeks Start on Monday\" extension for newer Gnome Shells, versions 3.30 through 49.\n\nIt is not needed with Gnome 50 and later as setting the first day of the week is supported natively.",
   "gettext-domain": "@gettext_domain@",
   "name": "Weeks Start on Monday Again...",
   "settings-schema": "org.gnome.shell.extensions.weeks-start-on-monday",

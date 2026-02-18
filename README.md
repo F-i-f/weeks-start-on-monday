@@ -14,6 +14,11 @@ Start on
 Monday...](https://extensions.gnome.org/extension/646/weeks-start-on-monday/)
 Gnome Shell extension for newer Gnome Shell versions.
 
+Starting with Gnome 50, the first day of the week can be configured directly in _Settings_ > _System_ > _Date & Time_:
+![Gnome 50 Date Settings](docs/gnome-50-date-settings.png)
+
+When using Gnome Shell 3.30 through 49, read on...
+
 ## Configuration
 
 With Weeks Start on Monday Again, weeks can start any day of the week.
